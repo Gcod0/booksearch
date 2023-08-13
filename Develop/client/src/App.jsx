@@ -3,6 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
+// create apollo provider to make every request work with apollo server
+import { ApolloProvider } from '@apollo/client';
+
+const provider = new ApolloProvider({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
