@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 
+// export typreDefs and resolvers
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
